@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
+    <script src="script.js" async defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" async></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <h1 id="header-text"><i class="fa-solid fa-book-open"></i> BOOKHUB</h1>
+    </header>
+    <div id="button-container">
+        <dialog>
+            <button id="newbook-close">X</button>
+            <form action="">
+                <input type="text" id="book-title" name="book-title" placeholder="Title"><br>
+                <input type="text" id="book-author" name="book-author" placeholder="Author"><br>
+                <input type="number" id="book-pages" name="book-pages" placeholder="Pages"><br>
+                <input type="text" id="book-language" name="book-language" placeholder="Language"><br>
+                <input type="number" id="book-rating" min="1" max="5" name="book-rating" placeholder="Rating"><br>
+                <div>
+                    <label for="book-readStatus">Read:</label>
+                    <input type="checkbox" name="book-readStatus" id="book-readStatus">
+                </div>                
+                <input type="submit" id="newbook-submit" value="Add Book">
+            </form>
+        </dialog>
+        <button id="newbook-button">+ New Book</button>
+    </div>
+    <div id="container"></div>    
 </body>
 </html>

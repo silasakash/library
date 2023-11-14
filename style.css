@@ -1,0 +1,177 @@
+/* Meyer reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Bookhub code */
+
+* {
+    color: white;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Agbalumo', sans-serif;
+}
+
+header {
+  position: sticky;
+    background-color: black;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+#button-container, #container {
+  background-color: #1f1f1f;
+}
+
+#button-container {
+  padding: 10px;
+}
+
+button {
+  display: block;	
+  border: 2px solid black;
+  background-color: black;
+  font-size: 20px;
+}
+
+dialog {
+  background-color: #292929;
+  position: relative;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+::backdrop {
+    background-image: linear-gradient(to bottom right, #CCCCCC, #666666);
+    opacity: 0.75;
+}
+
+#newbook-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #292929;
+  border: none;
+}
+
+dialog form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  background-color: #292929;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+form div {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#book-readStatus {
+  width: 20px;
+  height: 20px;
+
+}
+
+::placeholder {
+  color: #E7E0C3 ;
+}
+
+#newbook-submit {
+  background-color: white;
+  color: #292929;
+  font-weight: 900;
+}
+
+#newbook-button {
+  margin: auto;
+  font-size: 30px;
+  padding: 10px;
+  border: solid white;
+}
+
+#container {
+    flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#container > div {	
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  background-color: #292929;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#container > div > * {
+  flex-grow: 1;
+}
